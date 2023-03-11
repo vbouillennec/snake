@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Snake</title>
-	<style>
-		body {
-			height: 100vh;
-			width:100vw;
-			background-color: black;
-			margin: 0;
-			padding: 0;
-			align-items: center;
-			justify-content: center;
-			display: flex;
-		}
-		#game-board {
-			background-color: #ccc;
-			width: 800px;
-			height: 800px;
-			display: grid;
-			grid-template-columns: repeat(21, 1fr);
-			grid-template-rows: repeat(21, 1fr);
-		}
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake</title>
+    <style>
+      body {
+        height: 100vh;
+        width: 100vw;
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      }
+      #game-board {
+        background-color: #ccc;
+        width: 600px;
+        height: 600px;
+        display: grid;
+        grid-template-columns: repeat(21, 1fr);
+        grid-template-rows: repeat(21, 1fr);
+      }
 
-		.snake {
-			border: 2.5vmin solid black;
-			background-color: hsl(210, 100%, 50%);
-		}
+      .snake {
+        border-radius: 0.5rem;
+        /* box-shadow: 2vmin 2vmin 0px 0px hsl(210, 100%, 50%); */
+        background: hsl(210, 100%, 50%);
+        z-index: 2;
+        /* border: 0.1rem solid black; */
+      }
 
-		.food {
-			border: 2.5vmin solid black;
-			background-color: hsl(50, 100%, 50%);
-		}
-	</style>
-	<script src="/game.js" defer type="module"></script>
-</head>
-<body>
-
-	<div id="game-board">
-		<div class="snake"></div>
-		<div class="food"></div>
-	</div>
-</body>
+      .food {
+        /* border: 0.5vmin solid black; */
+        border-radius: 1rem;
+        background-color: hsl(40, 100%, 50%);
+        z-index: 1;
+      }
+    </style>
+    <script src="/game.js" defer type="module"></script>
+  </head>
+  <body>
+    <div id="game-board"></div>
+  </body>
 </html>
