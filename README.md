@@ -1,4 +1,4 @@
-# Snake
+# 🐍 Snake
 
 Snake video game in vanilla HTML & JavaScipt
 
@@ -6,5 +6,12 @@ Snake video game in vanilla HTML & JavaScipt
 
 To run this game download VSCode Extension ["Live Server"](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
-then : Click on **Go Live** in VS Code in the status bar
+Then, click on **Go Live** in VS Code status bar
 ![Click on 'go live' in VS Code in the status bar](./go_live.png)
+
+## How to play ?
+
+Easy ! Use the directional arrows of your keyboard
+
+&nbsp;&nbsp;&nbsp; &nbsp; ⬆️  
+⬅️ ⬇️ ➡️
